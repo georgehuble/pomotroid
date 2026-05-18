@@ -58,27 +58,18 @@ Pomotroid ships with 38 themes and supports fully custom themes with live hot-re
 
 See [THEMES.md](./THEMES.md) for the full theme list and instructions on creating your own.
 
-## Install
+## Install for Debian 12
 
 ### Download
 
-Download the latest release from the [releases](https://github.com/Splode/pomotroid/releases) page.
+Download the latest release from the [releases](https://github.com/georgehuble/pomotroid/releases/tag/v1.7.1) page.
+```bash
+# Install
+dpkg -i Pomotroid_*_amd64.deb
 
-Available for **Windows** (installer + standalone exe), **macOS** (universal DMG), and **Linux** (`.deb` + AppImage).
-
-> **Note:** Pomotroid is currently unsigned. Depending on your OS security settings you may see a warning on first launch — this is expected and can be safely dismissed.
-
-### Linux notes
-
-**System tray on GNOME:** GNOME does not display tray icons by default. To use the tray icon feature (Settings → System → Show in System Tray), install the [AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/) extension, then log out and back in. On Fedora: `sudo dnf install gnome-shell-extension-appindicator`. On Debian/Ubuntu it is pre-installed. Other desktop environments (KDE Plasma, XFCE, Cinnamon, MATE) support tray icons natively with no extra steps.
-
-### Homebrew (macOS)
-
-```sh
-brew install --cask pomotroid
+# Run
+pomotroid
 ```
-
-> The Homebrew cask is maintained separately and may lag behind the latest release. Check the [releases](https://github.com/Splode/pomotroid/releases) page for the most current version.
 
 ## Custom Themes
 
